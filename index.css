@@ -1,0 +1,318 @@
+/* || JAY SHREE GANESH || */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body , .main_container
+{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.main_container > header
+{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(1, 1, 55);    
+    color: white;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.main_container > header > .header_label
+{
+    width: 200px;
+    font-size: 1.2em;
+}
+.main_container > header > .header_links
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    gap: 20px;
+    padding-right: 50px;
+}
+.main_container > header > div:nth-child(3)
+{
+    display: none;
+}
+.main_container > header > .header_links > div
+{
+    font-size: 1.2em;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.main_container > header > .header_links > div:hover
+{
+    color: #ffc300;
+}
+
+body > .main_container > div:nth-child(2)
+{
+    width: 100%;
+    background-color: white;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    position: relative;
+    overflow: auto;
+    z-index: 10000;
+}
+.main_container > .body_container > .b_container_header
+{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(245, 107, 57);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    position: sticky;
+    top: 0;
+    z-index: 111111010101;
+}
+.main_container > .body_container > .b_container_header > input
+{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+::-webkit-scrollbar { 
+    display: none;
+}
+.main_container > .body_container > .b_container_body{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-flow: wrap column;
+    gap: 20px;
+}
+.main_container > .body_container > .b_container_body > div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main_container > .body_container > .b_container_body > div > div{
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.main_container > .body_container > .b_container_body > div > div:nth-child(1){
+    font-size: 1.4rem;
+    text-transform: capitalize; 
+    width: 100%;
+    height: fit-content;
+    padding: 2px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+    text-align: justify;
+}
+.main_container > .body_container > .b_container_body > div > div:nth-child(1)::before
+{
+    content: "Question : ";
+    color: rgb(255, 68, 0);
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 101;
+    font-weight: bolder;
+    padding-left: 1px; 
+}
+.main_container > .body_container > .b_container_body > div > div:nth-child(3){
+    height: 350px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    overflow: auto;
+    position: relative;
+}
+.main_container > .body_container > .b_container_body > div > div:nth-child(2){
+    color: rgb(255, 68, 0);
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    z-index: 101;
+    font-weight: bolder;
+    font-size: 1.4em;  
+    padding-left: 1px; 
+}
+.main_container > .body_container > .b_container_body > div > div:nth-child(4){
+    width: 100px;
+    height: 50px;
+    background-color: rgb(41, 40, 40);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: white;
+    font-size: 1.2em;
+}
+.main_container > .body_container > .b_container_body > div > div:nth-child(4):hover{
+    background-color: rgb(13, 13, 13);
+}
+
+.main_container > .body_container > .b_container_footer
+{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(6, 6, 64);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-flow: wrap row;
+    gap: 10px;
+}
+.main_container > .body_container > .b_container_footer > div
+{
+    height: 210px;
+    border-right: 2px solid white;
+    width: fit-content;
+    flex-grow: 1;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main_container > .body_container > .b_container_footer > div > label
+{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    color: rgb(3, 3, 66);
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px;
+}
+.main_container > .body_container > .b_container_footer > div > .data
+{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap column;
+    padding: 10px;
+    font-size: 1.2em;
+    gap: 10px;
+    transition: 0.7s ease-in;
+}
+.main_container > .body_container > .b_container_footer > div:last-child
+{
+    height: fit-content;
+    border: 2px solid rgba(255, 255, 255, 0.519);
+    border-radius: 100px;
+}
+.main_container > .body_container > .b_container_footer > div:last-child > div
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_container > .body_container > .b_container_footer > div > .data > a::before
+{
+    content: ">";
+    padding: 20px;
+    text-decoration: none;
+}
+.main_container > .body_container > .b_container_footer > div > .data > a , 
+.main_container > .body_container > .b_container_footer > div > .data > li > a 
+{
+    width: 300px;
+    text-decoration: none;
+    cursor: hand;
+    color: white;
+    border-radius: 100px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.7s;
+}
+.main_container > .body_container > .b_container_footer > div > .data > a:hover ,
+.main_container > .body_container > .b_container_footer > div > .data > li > a:hover
+{
+    padding-left: 20px;
+    transition: 0.7s;
+    color: #ffc300;
+}
+
+
+@media only screen and (max-width:576px){
+
+    .main_container > header
+    {
+        border-bottom: 5px solid white;
+    }
+    .main_container > header > div:nth-child(2)
+    {
+        display: none;
+    }
+    .main_container > header > div:nth-child(3)
+    {
+        width: 80%;
+        height: 100%;
+        align-items: center;
+        justify-content: end;
+        display: flex;
+    }
+    .main_container > header > div:nth-child(3) > select{
+        width: 100px;
+        padding: 5px;
+        border-radius: 100px;
+        border: none;
+    }
+
+    .main_container > .body_container > .b_container_header
+    {
+        position: relative;
+    }
+
+    .main_container > .body_container > .b_container_body > div > div:nth-child(1){
+        display: flex;
+        align-items: center;
+        font-size: 0.9em;
+        padding-left: 10px;
+    }
+    .main_container > .body_container > .b_container_body > div > div:nth-child(1)::before
+    {
+        display: none;
+    }
+    
+    .main_container > .body_container > .b_container_footer > div
+    {
+        width: 200px;
+        border: none;
+        font-size: 1em;
+    }
+    .main_container > .body_container > .b_container_footer > div:nth-child(3)
+    {
+        height: fit-content;
+    }
+    .main_container > .body_container > .b_container_footer > div:last-child
+    {
+        font-size: 0.8em;
+        padding: 0px;
+        border: none;
+    }
+}
